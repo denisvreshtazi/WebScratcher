@@ -1,0 +1,22 @@
+<FirstScreen>:
+    GridLayout
+        cols: 1
+        spacing: 10
+        padding: 10
+        Image:
+            id: foto
+            size_hint_y: 0.8
+        TextInput:
+            id: user_query
+            size_hint_y: 0.08
+        Button:
+            text: 'Search Image'
+            size_hint_y: 0.12
+            on_press: root.set_image()
+
+
+
+<RootWidget>:
+    FirstScreen:
+        id: first_screen
+        name: 'first_screen'
